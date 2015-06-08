@@ -51,7 +51,7 @@ built_when       | M               | String    | When the build was done        
 compiler_version | O<sup>1</sup>   | String    | The compiler version                                                         | "1.7.0_51"
 current_time     | M               | DateTime  | The current time (time of request)                                           | "2014-03-12T19:40:18.877Z"
 git_sha1         | M               | String    | The git sha1 that can be used to identify the primary material for the build | "d567d2650318f704747204815adedd2396a203f5"
-group_id         | O               | String    | The maven group id                                                           | "beamly.platform"
+group_id         | O<sup>2</sup>   | String    | The maven group id                                                           | "beamly.platform"
 machine_name     | M               | String    | The name of the machine responding to this request                           | "ip-10-1-11-196 (127.0.1.1)"
 os_arch          | M               | String    | The architecture the OS of the machine responding to the request             | "amd64"
 os_avgload       | O               | String    | The average load of the machine responding to the request                    | "0.0"
