@@ -54,9 +54,9 @@ git_sha1         | M               | String    | The git sha1 that can be used t
 group_id         | O<sup>2</sup>   | String    | The maven group id                                                           | "beamly.platform"
 machine_name     | M               | String    | The name of the machine responding to this request                           | "ip-10-1-11-196 (127.0.1.1)"
 os_arch          | M               | String    | The architecture the OS of the machine responding to the request             | "amd64"
-os_avgload       | O               | String    | The average load of the machine responding to the request                    | "0.0"
+os_avgload       | O               | Number    | The average load of the machine responding to the request                    | 0.0
 os_name          | M               | String    | The name of the OS of the machine responding to the request                  | "Linux"
-os_numprocessors | O               | String    | The number of processors of the machine responding to the request            | "2"
+os_numprocessors | O               | Number    | The number of processors of the machine responding to the request            | 2
 os_version       | M               | String    | The version of the OS of the machine responding to the request               | "3.2.0-55-virtual"
 runbook_uri      | M               | URI       | The URI where the RUNBOOK can be found                                       | "https://XXXXXX/RUNBOOKS/CPT+Runbook"
 up_duration      | M               | String    | How long the service responding to the request has been up                   | "730444633 milliseconds"
