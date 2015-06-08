@@ -159,7 +159,7 @@ Example:
     ]
 }
 ```
- 
+
 
 <a name="gtg">GTG - Good to Go</a>
 ----------------------------------
@@ -216,4 +216,3 @@ The Config resource returns the configuration that is used by the service.  Typi
 Valid response codes: 200 OK
 
 Response Media Type: application/json
-
