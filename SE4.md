@@ -131,7 +131,7 @@ report_duration         | M         | String        | How long it took to genera
 tests                   | M         | Array         | array of test results	                                                       |
 tests[].duration_millis | M         | Float         | Number of milliseconds taken to run the test                                     | 1.0
 tests[].test_name       | M         | String        | The name of the test, a name that is meaningful to supporting engineers          | "CPTCluster"
-tests[].test_result     | M         | String (Enum) | The state of the test, may be "not_run", "running", "passed", "failed", "passed" | "passed"
+tests[].test_result     | M         | String (Enum) | The state of the test, may be "not_run", "running", "passed", "failed" | "passed"
 tests[].tested_at       | M         | DateTime      | The time at which this test was executed                                         | "2014-03-12T20:16:45.013Z"
 
 
