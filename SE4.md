@@ -47,7 +47,7 @@ artifact_id      | M               | String    | Artifact name or maven artifact
 build_number     | M               | String    | The build pipeline number                                                    | "1537.1"
 build_machine    | M               | String    | The machine the artifact was built or verified on                            | "ip-10-4-1-16 (127.0.1.1)"
 built_by         | M               | String    | The user that did the build                                                  | "go"
-built_when       | M               | String    | When the build was done                                                      | "20140303-1746"
+built_when       | M               | DateTime  | When the build was done                                                      | "2014-03-11T08:40:18.877Z"
 compiler_version | O<sup>1</sup>   | String    | The compiler version                                                         | "1.7.0_51"
 current_time     | M               | DateTime  | The current time (time of request)                                           | "2014-03-12T19:40:18.877Z"
 git_sha1         | M               | String    | The git sha1 that can be used to identify the primary material for the build | "d567d2650318f704747204815adedd2396a203f5"
@@ -61,7 +61,7 @@ os_version       | M               | String    | The version of the OS of the ma
 runbook_uri      | M               | URI       | The URI where the RUNBOOK can be found                                       | "https://XXXXXX/RUNBOOKS/CPT+Runbook"
 up_duration      | M               | String    | How long the service responding to the request has been up                   | "730444633 milliseconds"
 up_since         | M               | DateTime  | The time at which the service was started                                    | "2014-03-04T08:46:13.877Z"
-version          | M               | String    | The version of the service responding to the request	                        | "1537"
+version          | M               | String    | The version of the service responding to the request	                      | "1537"
 vm_name          | O<sup>2</sup>   | String    | The name of the VM that the service is running on                            | "Java HotSpot(TM) 64-Bit Server VM"
 vm_vendor        | O<sup>2</sup>   | String    | The vendor of the VM that the service is running on                          | "Oracle Corporation"
 vm_version       | O<sup>2</sup>   | String    | The version of the VM that the service is running on                         | "24.51-b03"
@@ -159,7 +159,7 @@ Example:
     ]
 }
 ```
- 
+
 
 <a name="gtg">GTG - Good to Go</a>
 ----------------------------------
