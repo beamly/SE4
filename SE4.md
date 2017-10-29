@@ -87,7 +87,7 @@ Example:
 <
 {
     "artifact_id": "cpt-server",
-    "build-number": "1552.1",
+    "build_number": "1552.1",
     "build_machine": "10-0-10-22",
     "built_by": "go",
     "built_when": "20140417-1342",
