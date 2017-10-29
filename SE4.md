@@ -168,7 +168,7 @@ The "Good To Go" (GTG) returns a successful response in the case that the servic
 
 Note that GTG is not used to determine if the service is healthy or not, only if it is able to receive traffic.  A healthy instance may not be able to accept traffic due to the failure of critical downstream dependencies.
 
-A successful response is a 200 OK with a content of the text "OK" (including quotes) and a media type of "plain/text"
+A successful response is a 200 OK with a content of the text "OK" (including quotes) and a media type of "text/plain"
 
 A failed response is a 5XX reponse with either a 500 or 503 response preferred.  Failure to respond within a predetermined timeout typically 2 seconds is also treated as a failure.
 
@@ -191,7 +191,7 @@ A failed response is a 5XX reponse with either a 500 or 503 response preferred. 
 
 The "Service Canary" (ASG) returns a successful response in the case that the service is in a healthy state.  If a service returns a failure response or fails to respond within a predefined timeout then the service can expect to be terminated and replaced.  (Typically this resouce is used in auto-scaling group healthchecks.)
 
-A successful response is a 200 OK with a content of the text "OK" (including quotes) and a media type of "plain/text"
+A successful response is a 200 OK with a content of the text "OK" (including quotes) and a media type of "text/plain"
 
 A failed response is a 5XX reponse with either a 500 or 503 response preferred.  Failure to respond within a predetermined timeout typically 2 seconds is also treated as a failure.
 
