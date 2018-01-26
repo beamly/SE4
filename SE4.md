@@ -117,6 +117,8 @@ Example:
 
 The healthcheck resource provides information about internal health and its perceived health of downstream dependencies.
 
+It is up for the implementation of this specification to describe how a given healthcheck resource may affect the current state of the GTG and/or ASG resources, or neither.
+
 Important: the healthcheck resource must not block waiting for healthcheck probes to execute, it should return the last known status.
 
 Valid response codes: 200 OK
