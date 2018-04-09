@@ -117,6 +117,8 @@ Example:
 
 The healthcheck resource provides information about internal health and its perceived health of downstream dependencies.
 
+It is up for the implementation of this specification to describe how a given healthcheck resource may affect the current state of the GTG and/or ASG resources, or neither.
+
 Important: the healthcheck resource must not block waiting for healthcheck probes to execute, it should return the last known status.
 
 Valid response codes: 200 OK
@@ -170,7 +172,7 @@ Note that GTG is not used to determine if the service is healthy or not, only if
 
 A successful response is a 200 OK with a content of the text "OK" (including quotes) and a media type of "text/plain"
 
-A failed response is a 5XX reponse with either a 500 or 503 response preferred.  Failure to respond within a predetermined timeout typically 2 seconds is also treated as a failure.
+A failed response is a 5XX response with either a 500 or 503 response preferred.  Failure to respond within a predetermined timeout typically 2 seconds is also treated as a failure.
 
 
 ```
@@ -189,11 +191,11 @@ A failed response is a 5XX reponse with either a 500 or 503 response preferred. 
 <a name="asg">ASG - Service Canary</a>
 --------------------------------------
 
-The "Service Canary" (ASG) returns a successful response in the case that the service is in a healthy state.  If a service returns a failure response or fails to respond within a predefined timeout then the service can expect to be terminated and replaced.  (Typically this resouce is used in auto-scaling group healthchecks.)
+The "Service Canary" (ASG) returns a successful response in the case that the service is in a healthy state.  If a service returns a failure response or fails to respond within a predefined timeout then the service can expect to be terminated and replaced.  (Typically this resource is used in auto-scaling group healthchecks.)
 
 A successful response is a 200 OK with a content of the text "OK" (including quotes) and a media type of "text/plain"
 
-A failed response is a 5XX reponse with either a 500 or 503 response preferred.  Failure to respond within a predetermined timeout typically 2 seconds is also treated as a failure.
+A failed response is a 5XX response with either a 500 or 503 response preferred.  Failure to respond within a predetermined timeout typically 2 seconds is also treated as a failure.
 
 ```
 < HTTP/1.1 200 OK
